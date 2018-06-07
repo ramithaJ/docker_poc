@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: employee-service-deployment
+  labels:
+    app: employeeservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: employeeservice
+  template:
+    metadata:
+      labels:
+        app: employeeservice
+    spec:
+      containers:
+      - name: employeeservice
+        image: jayasekara84/employee:v2
+        ports:
+        - containerPort: 8080
