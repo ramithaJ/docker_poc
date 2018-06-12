@@ -20,7 +20,7 @@ node {
 
     stage "Push"
 
-        sh "docker push ${imageName}"
+        sh "docker push jayasekara84/employee:latest"
 
     stage "Deploy"
 
