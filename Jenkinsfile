@@ -13,7 +13,7 @@ node {
     env.BUILDIMG=imageName
 
     stage "Build"
-
+        sh "sh "./gradlew clean"
         sh "docker build  -t jayasekara84/employee ."
 
     stage "Push"
