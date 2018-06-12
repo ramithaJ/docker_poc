@@ -28,6 +28,6 @@ node {
 
     stage "Deploy"
 
-        sh "sed 's#hub.docker.com/jayasekara84/employee:latest#'$BUILDIMG'#' jayasekara84/employee/deployment.yaml | kubectl apply -f -"
+        sh "sed 'jayasekara84/employee:latest' deployment.yaml | kubectl apply -f -"
 
 }
