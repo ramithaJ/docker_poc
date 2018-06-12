@@ -14,7 +14,7 @@ node {
 
     stage "Build"
 
-        sh "docker build -t ${imageName} -f Dockerfile jayasekara84/employee"
+        sh "docker build -t -f Dockerfile jayasekara84/employee"
 
     stage "Push"
 
