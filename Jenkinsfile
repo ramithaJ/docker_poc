@@ -15,12 +15,12 @@ node {
     sh "./gradlew clean build"
 
     stage "Build"
-
+ß
         sh "docker build  -t jayasekara84/employee ."
 
     stage "Push"
 
-                withDockerRegistry([ credentialsId: "credentials-id", url: "" ]) {
+                withDockerRegistry([ credentialsId: "192a93d0-3361-4327-83c1-1dbf4831e757", url: "" ]) {
                   sh "docker push jayasekara84/employee:latest"
                 }
 
