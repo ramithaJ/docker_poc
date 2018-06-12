@@ -15,7 +15,7 @@ node {
     sh "./gradlew clean build"
 
     stage "Build"
-ß
+
         sh "docker build  -t jayasekara84/employee ."
 
     stage "Push"
