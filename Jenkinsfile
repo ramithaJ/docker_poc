@@ -12,7 +12,7 @@ node {
     imageName = "${registryHost}${appName}:${tag}"
     env.BUILDIMG=imageName
 
-    sh "sh "./gradlew clean"
+    sh "./gradlew clean build"
 
     stage "Build"
 
