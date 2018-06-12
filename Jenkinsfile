@@ -19,8 +19,12 @@ node {
         sh "docker build  -t jayasekara84/employee ."
 
     stage "Push"
+        steps {
+                withDockerRegistry([ credentialsId: "6544de7e-17a4-4576-9b9b-e86bc1e4f903", url: "" ]) {
+                  sh "docker push jayasekara84/employee:latest"
+                }
+              }
 
-        sh "docker push jayasekara84/employee:latest"
 
     stage "Deploy"
 
