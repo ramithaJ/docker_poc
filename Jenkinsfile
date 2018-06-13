@@ -28,6 +28,6 @@ node {
 
     stage "Deploy"
 
-        sh "sed 'jayasekara84/employee:latest' deployment.yaml | kubectl create -f deployment.yaml"
+        sh "kubectl create -f deployment.yaml"
 
 }
