@@ -39,6 +39,20 @@ spec:
     tier: jenkins
   type: NodePort
 ---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jenkins
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jenkins
+          servicePort: 80
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
