@@ -20,7 +20,7 @@ node {
 
     stage "Push"
 
-                withDockerRegistry([ credentialsId: "192a93d0-3361-4327-83c1-1dbf4831e757", url: "" ]) {
+                withDockerRegistry([ credentialsId: "3c1243cf-f0a2-4837-b695-807cf19571d8", url: "" ]) {
                   sh "docker push jayasekara84/employee:latest"
                 }
 
