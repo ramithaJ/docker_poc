@@ -9,7 +9,7 @@ spring:
 
 
 employee:
-  type: Business
-  name: Test
+  type:
+
 
 
