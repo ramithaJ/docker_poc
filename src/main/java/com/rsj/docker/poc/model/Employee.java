@@ -1,5 +1,7 @@
 package com.rsj.docker.poc.model;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Employee {
 
     private String employeeName;
@@ -7,6 +9,12 @@ public class Employee {
     private String businessLine;
     private Address address;
     private ContactCard contactCard;
+
+    private String employeeType;
+
+    public String getEmployeeType() { return employeeType; }
+
+    public void setEmployeeType(String employeeType) { this.employeeType = employeeType; }
 
     public ContactCard getContactCard() {
         return contactCard;
