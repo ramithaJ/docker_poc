@@ -7,5 +7,6 @@ spring:
         ebable: true
 
 employee:
-  type:
+  type: Business
+
 
