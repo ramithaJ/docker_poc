@@ -1,6 +1,14 @@
 spring:
   application:
     name: employeeservice
+  cloud:
+    kubernetes:
+      reload:
+        ebable: true
 
 employee:
   type:
+
+
+
+
