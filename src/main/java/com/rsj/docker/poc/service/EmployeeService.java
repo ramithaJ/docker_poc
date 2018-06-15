@@ -30,7 +30,7 @@ public class EmployeeService {
         employee.setEmployeeName("PNC Bank");
         employee.setAddress(getAddress());
         employee.setContactCard(getContactCard());
-        employee.setEmployeeType(employeeType);
+        employee.setEmployeeType("employeeType");
 
      return employee;
     }
