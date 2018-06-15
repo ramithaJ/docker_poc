@@ -17,10 +17,14 @@ spec:
       containers:
         - name: employeeservice
           image: jayasekara84/employee-service:latest
+          command: [ "/bin/sh", "-c", "ls /etc/config/" ]
+                volumeMounts:
+                - name: config-volume
+                  mountPath: /etc/config
           ports:
               - containerPort: 8080
       volumes:
-        - name: employeeservice
+        - name: config-volume
           configMap:
               name: employeeservice
               items:
