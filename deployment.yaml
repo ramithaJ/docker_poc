@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: employee-service-deployment
+  name: employeeservice
   labels:
     app: employeeservice
 spec:
