@@ -27,10 +27,11 @@ public class EmployeeService {
         Employee employee = new Employee();
         employee.setEmployeeId("0000001");
         employee.setBusinessLine("Banking");
+        employee.setEmployeeType(employeeType);
         employee.setEmployeeName("PNC Bank");
         employee.setAddress(getAddress());
         employee.setContactCard(getContactCard());
-        employee.setEmployeeType("employeeType");
+
 
      return employee;
     }

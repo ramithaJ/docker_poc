@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: employeeservice
-        image: jayasekara84/employee:v2
+        image: jayasekara84/employee-service:latest
         ports:
         - containerPort: 8080
