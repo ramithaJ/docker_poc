@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: employeeservice
-
-employee:
-  type:
