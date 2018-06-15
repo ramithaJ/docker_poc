@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -42,9 +43,17 @@ public class EmployeeService {
         employee.setAddress(getAddress());
         employee.setContactCard(getContactCard());
 
-
+        hello();
      return employee;
     }
+
+
+    @Scheduled(fixedDelay = 5000)
+    public void hello() {
+        System.out.println("The message is: " + config.getMessage());
+    }
+
+
 
     private Address getAddress(){
 
