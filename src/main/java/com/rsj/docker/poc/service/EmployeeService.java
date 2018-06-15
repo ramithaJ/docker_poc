@@ -48,7 +48,7 @@ public class EmployeeService {
     }
 
 
-    @Scheduled(fixedDelay = 1)
+    @Scheduled(fixedDelay = 10000)
     public void hello() {
         System.out.println("The message is: " + config.getMessage());
     }
